@@ -9,7 +9,7 @@ Nuestra infraestructura utiliza un modelo de **Arquitectura Centralizada** (Reus
 * **GitHub Organizations:** Centro de mando para permisos, equipos y **Secretos Globales**.
 * **asociacion-ops (Este repo):** Define los "planos" técnicos y la lógica de despliegue reutilizable.
 * **Repo-Template:** El molde inicial para nuevos proyectos, conectado automáticamente a este "cerebro".
-* **Netlify:** Hosting que recibe los despliegues "empujados" desde GitHub Actions. Al usar este método, podemos desplegar repositorios privados de la organización sin incurrir en costes de planes Pro.
+* **Netlify:** Hosting que recibe los despliegues "empujados" desde GitHub Actions. Al usar este método, podemos desplegar repositorios de la organización y observar las funcionalidades en tiempo real.
 
 ## 🔐 2. Sistema de Permisos y Colaboración
 

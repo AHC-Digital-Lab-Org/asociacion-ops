@@ -70,4 +70,4 @@ jobs:
             --dir=dist \
             --prod \
             --site=${{ vars.NETLIFY_SITE_ID }} \
-            --auth=${{ secrets.NET_AUTH_TOKEN }}
+            --auth=${{ secrets.NETLIFY_AUTH_TOKEN }}

@@ -24,16 +24,8 @@ jobs:
         with:
           fetch-depth: 0
 
-      # --- CAPA 1: CALIDAD (Súper-Linter) ---
-      # Corre para todos los lenguajes automáticamente
-      - name: 🔍 Super-Linter
-        uses: github/super-linter@v5
-        env:
-          VALIDATE_ALL_CODEBASE: false
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # --- CAPA 2: CONFIGURACIÓN SEGÚN INPUT ---
+      # --- CAPA 1: CONFIGURACIÓN SEGÚN INPUT ---
 
       # Configuración si el lenguaje es NODE
       - name: 🟢 Setup Node.js

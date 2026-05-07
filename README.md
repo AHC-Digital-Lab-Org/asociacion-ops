@@ -46,7 +46,7 @@ Ubicado en `.github/workflows/`, este archivo contiene los pasos de ejecución:
 
 Cada vez que se inicie un proyecto nuevo, el DevOps debe:
 
-1.  **Crear el Repo:** Usar el botón "Use this template" del `repo-template`.
+1.  **Crear el Repo:** Usar el botón "Use this template" del `repo-template`. (Recuerda seleccionar la organizacion a la hora de crearlo)
 2.  **Aprovisionar Netlify:** Crear el sitio manualmente en Netlify (Site > Add new site > Deploy manually) para obtener el `API ID`.
 3.  **Configurar Variables:** En el nuevo repo de GitHub, añadir la variable `NETLIFY_SITE_ID`.
 4.  **Asignar Responsable:** Añadir al desarrollador jefe como *Maintainer* del repositorio.

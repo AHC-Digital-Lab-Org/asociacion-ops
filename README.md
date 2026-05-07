@@ -50,10 +50,12 @@ Cada vez que se inicie un proyecto nuevo, el DevOps debe:
 2.  **Aprovisionar Netlify:** Crear el sitio manualmente en Netlify (Site > Add new site > Deploy manually) para obtener el `API ID`.
 3.  **Configurar Variables:** En el nuevo repo de GitHub, añadir la variable `NETLIFY_SITE_ID`.
 4.  **Asignar Responsable:** Añadir al desarrollador jefe como *Maintainer* del repositorio.
-5.  **Activar Protección de Rama:** * Ir a `Settings > Branches > Add rule`.
+5.  **Activar Protección de Rama:**
+6.  * Ir a `Settings > Branches > Add rule`.
     * Pattern: `main`.
+    * Bypass: `Mantain {...} For pull request only`.
     * Activar: `Require a pull request before merging` (1 approval).
-    * Activar: `Require status checks to pass` (Seleccionar el job de CI/CD).
+    * Activar: `Require status checks to pass` (Seleccionar el job de CI/CD = 🚀 CI/CD Pipeline).
 
 ---
 

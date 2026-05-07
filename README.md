@@ -47,11 +47,14 @@ Ubicado en `.github/workflows/`, este archivo contiene los pasos de ejecución:
 Cada vez que se inicie un proyecto nuevo, el DevOps debe:
 
 1.  **Crear el Repo:** Usar el botón "Use this template" del `repo-template`. (Recuerda seleccionar la organizacion a la hora de crearlo)
-2.  **Aprovisionar Netlify:** Crear el sitio manualmente en Netlify (Site > Add new site > Deploy manually) para obtener el `API ID`.
-3.  **Configurar Variables:** En el nuevo repo de GitHub, añadir la variable `NETLIFY_SITE_ID`.
-4.  **Asignar Responsable:** Añadir al desarrollador jefe como *Maintainer* del repositorio.
-5.  **Activar Protección de Rama:**
-6.  * Ir a `Settings > Branches > Add rule`.
+2.  **Aprovisionar Netlify:** Crear el sitio manualmente en Netlify:
+3.  * Ir a `Import from Github` seleccionamos la organizacion y el nuevo repositorio `deploy`
+    * Una vez desplegado: `Project configuration > Project information > PROJECT ID "SITE ID"`
+    * Copiamos esta `SITE ID` en la variable `NETLIFY_SITE_ID` del repositorio
+4.  **Configurar Variables:** En el nuevo repo de GitHub, añadir la variable `NETLIFY_SITE_ID`.
+5.  **Asignar Responsable:** Añadir al desarrollador jefe como *Maintainer* del repositorio.
+6.  **Activar Protección de Rama:**
+7.  * Ir a `Settings > Branches > Add rule`.
     * Pattern: `main`.
     * Bypass: `Mantain {...} For pull request only`.
     * Activar: `Require a pull request before merging` (1 approval).

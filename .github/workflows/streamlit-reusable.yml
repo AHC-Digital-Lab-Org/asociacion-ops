@@ -58,7 +58,9 @@ jobs:
       # --- CAPA 3: TESTS (CONTRATO UNIVERSAL) ---
       # El desarrollador debe definir "test" en su package.json
       - name: 🧪 Run Tests
-        run: npm test
+        run: |
+          npm test
+          npm run lint
 
       # --- CAPA 4: CONSTRUCCIÓN (CAJA NEGRA) ---
       - name: 🏗️ Build Project
